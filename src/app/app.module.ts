@@ -11,6 +11,8 @@ import { AppComponent } from './app.component';
 
 import { BarcodeScanner } from '@ionic-native/barcode-scanner/ngx';
 
+import { IonicStorageModule } from '@ionic/storage';
+
 
 @NgModule({
   declarations: [AppComponent],
@@ -18,7 +20,8 @@ import { BarcodeScanner } from '@ionic-native/barcode-scanner/ngx';
   imports: [
     BrowserModule, 
     IonicModule.forRoot(), 
-    AppRoutingModule, 
+    AppRoutingModule,
+    IonicStorageModule.forRoot()
     ],
   providers: [
     StatusBar,
