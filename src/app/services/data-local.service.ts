@@ -41,7 +41,9 @@ export class DataLocalService {
         this.iab.create(registro.text, '_system');
         break;
       
-      case 'geo:':
+      case 'geo':
+        console.log('entro');
+        this.navCtrl.navigateForward(`/tabs/tab2/maps/${registro.text}`);
       break;
 
     }
